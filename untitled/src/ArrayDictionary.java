@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ArrayDictionary<E, T> {
@@ -10,9 +9,12 @@ public class ArrayDictionary<E, T> {
 
     public ArrayDictionary(){
     }
-//necessary
+
     //add a key-value pair to the dictionary
-    //void put(E key, T value)
+    void put(E key, T value){
+        keys.add(key);
+        values.add(value);
+    }
 
     //get the value associated with a given key
     //T get(E key)
