@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class ArrayDictionary<E, T> {
@@ -22,7 +23,11 @@ public class ArrayDictionary<E, T> {
     }
 
     //remove a key-value pair and return its value
-    //T remove(E key)
+    T remove(E key){
+            T removedValue = values.remove(keys.indexOf(key));
+            keys.remove(key);
+            return removedValue;
+    }
 
     //returns true if the given key has an associated value
     //boolean contains(E key)
