@@ -17,7 +17,9 @@ public class ArrayDictionary<E, T> {
     }
 
     //get the value associated with a given key
-    //T get(E key)
+    T get(E key){
+        return values.get(keys.indexOf(key));
+    }
 
     //remove a key-value pair and return its value
     //T remove(E key)
